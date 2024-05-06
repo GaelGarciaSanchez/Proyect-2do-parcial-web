@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC</title>
+    <link rel="icon" type="image/png" href="img/maurice.jpeg">
+    <link rel="stylesheet" href="css/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ubicacion.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .row > div {
+       
+        background-color: rgb(214, 211, 129);
+        padding: 40px;
+        border-style: solid;
+        border-color: black;
+    }
+    body {
+        background-color: rgba(94, 121, 63, 0.829);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    nav {
+        background-image: url(img/maurice.jpeg); 
+    }
+    
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Desarrollo web</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tecnologias web APi's
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="HTTP.html">HTTP</a>
+                            <a class="dropdown-item" href="SOAP.html">SOAP</a>
+                            <a class="dropdown-item" href="REST.html">REST</a>
+                            <a class="dropdown-item" href="JWT.html">JWT</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Microservicios.html">Microservicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Desarrollo web API's
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="Recomendaciones.html">Recomendaciones</a>
+                            <a class="dropdown-item" href="Procesos.html">Procesos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contenedores.html">Contenedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nube.html">Desarrollo Para Nube</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Apps Web ASP.NET
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="WebForms.html">Web Forms</a>
+                            <a class="dropdown-item" href="WFC.html">WFC</a>
+                            <a class="dropdown-item" href="MVC.html">MVC</a>
+                            <a class="dropdown-item" href="Web API.html">Web API</a>
+                            <a class="dropdown-item" href="SignalR.html">Signal R</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ASP.Net Core
+                            </a>
+                            <a class="dropdown-item" href="Razor.html">Razor</a>
+                            <a class="dropdown-item" href="Blazor.html">Blazor</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <div class="row">
+          
+          <div class="col-12">
+            <center><h1>MVC</h1></center>
+            <center><p>
+                El patrón arquitectónico de Modelo-Vista-Controlador (MVC) separa una aplicación en tres componentes principales: el modelo, la vista y el controlador. 
+                El marco de MVC de ASP.NET proporciona una alternativa al patrón de ASP.NET Web Forms para crear aplicaciones web basadas en MVC. El marco de ASP.NET 
+                MVC es un marco de presentación ligero y muy fácil de probar que (como las aplicaciones basadas en Web Forms) se integra con las características de ASP.NET 
+                existentes, tales como páginas maestras y la autenticación basada en pertenencia. El marco de MVC se define en el espacio de nombres de System.Web.Mvc y es 
+                una parte admitida fundamental del espacio de nombres de System.Web.
+            </p></center>
+                <h3>
+                   el marco de MVC incluye los siguientes Componentes: 
+                </h3>
+                <center>
+                    <img src="img\MVC1.jpg" alt="MVCjaja">
+                </center>
+
+                <ul>
+                    <li><b>
+                        Modelos: 
+                    </li></b>
+                        <p>
+                            Los objetos modelo son las partes de la aplicación que implementan la lógica del dominio de datos de la aplicación. A menudo, los objetos modelo 
+                            recuperan y almacenan el estado del modelo en una base de datos. Por ejemplo, un objeto Producto podría recuperar información de una base de datos, 
+                            operar en ella y, después, escribir la información actualizada en una tabla Productos en SQL Server.
+                        </p>
+                    <li><b>
+                        Vistas
+                    </li></b>
+                        <p>
+                            Las vistas son los componentes que muestra la interfaz de usuario (IU) de la aplicación. Normalmente, esta interfaz de usuario se crea a partir de los
+                            datos del modelo. Un ejemplo sería una vista de edición de una tabla Productos que muestra cuadros de texto, listas desplegables y casillas basándose 
+                            en el estado actual de un objeto Productos.
+                        </p>    
+                    <li><b>
+                        Controladores. 
+                    </li></b>
+                        <p>
+                          Los controladores son los componentes que controlan la interacción del usuario, trabajan con el modelo y, en último término, seleccionan una vista para representar
+                          la interfaz de usuario. En una aplicación de MVC, la vista solo muestra información; el controlador controla y responde a la interacción y los datos que introducen 
+                          los usuarios. Por ejemplo, el controlador administra los valores de la cadena de consulta y pasa estos valores al modelo, que a su vez los usa para consultar la base de datos.  
+                        </p>
+                </ul>
+            
+                <center><h1>
+                        Como funciona MVC?             
+                 </h1>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/DUg2SWWK18I?si=pUImi6RBjOT4ggFP" title="YouTube video player" frameborder="0" allow="accelerometer; 
+                 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+                </center>
+
+                <a href="https://learn.microsoft.com/es-es/aspnet/mvc/overview/older-versions-1/overview/asp-net-mvc-overview">Referencia</a>
+
+          </div>
+            
+            </center>
+
+          </div>
+
+        </div>
+    </div>
+</body>

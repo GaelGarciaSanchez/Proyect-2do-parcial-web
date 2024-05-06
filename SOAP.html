@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAP</title>
+    <link rel="icon" type="image/png" href="img/maurice.jpeg">
+    <link rel="stylesheet" href="css/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ubicacion.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .row > div {
+       
+        background-color: rgb(214, 211, 129);
+        padding: 40px;
+        border-style: solid;
+        border-color: black;
+    }
+    body {
+        background-color: rgba(94, 121, 63, 0.829);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    nav {
+        background-image: url(img/maurice.jpeg); 
+    }
+    
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Desarrollo web</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tecnologias web APi's
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="HTTP.html">HTTP</a>
+                            <a class="dropdown-item" href="SOAP.html">SOAP</a>
+                            <a class="dropdown-item" href="REST.html">REST</a>
+                            <a class="dropdown-item" href="JWT.html">JWT</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Microservicios.html">Microservicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Desarrollo web API's
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="Recomendaciones.html">Recomendaciones</a>
+                            <a class="dropdown-item" href="Procesos.html">Procesos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contenedores.html">Contenedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nube.html">Desarrollo Para Nube</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Apps Web ASP.NET
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="WebForms.html">Web Forms</a>
+                            <a class="dropdown-item" href="WFC.html">WFC</a>
+                            <a class="dropdown-item" href="MVC.html">MVC</a>
+                            <a class="dropdown-item" href="Web API.html">Web API</a>
+                            <a class="dropdown-item" href="SignalR.html">Signal R</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ASP.Net Core
+                            </a>
+                            <a class="dropdown-item" href="Razor.html">Razor</a>
+                            <a class="dropdown-item" href="Blazor.html">Blazor</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="container">
+        <div class="row">
+          
+          <div class="col-12">
+            <center><h1>SOAP</h1></center>
+            <center><p>
+                SOAP (Simple Object Access Protocol) es un protocolo de comunicación utilizado para intercambiar información
+                estructurada en la implementación de servicios web. Fuedesarrollado para facilitar la comunicación entre sistemas
+                distribuidos a través de la web.
+            </p></center>
+            <center><p>
+                SOAP es un protocolo de comunicación basado en XML (Extensible Markup Language) que permite que aplicaciones en diferentes plataformas se comuniquen
+                entre sí de manera independiente del lenguaje de programación y el sistema operativo utilizados. Su nombre, "Simple Object Access Protocol", 
+                enfatiza su simplicidad y su capacidad para acceder a objetos en sistemas remotos a través de la web.
+            </p></center>
+            <center>
+            <img src="img\SOAP1.png" alt="jabonlatortuga" width="800">
+            </center>
+            <center><h3><b>
+                Caracteristicas de Soap:   
+            </h3></b></center><p>
+                <ol>
+                    <li><b>
+                            Basado en XML
+                    </li></b>
+                        <p>
+                            SOAP utiliza XML como su formato de
+                            mensaje, lo que lo hace legible y comprensible tanto para
+                            humanos como para máquinas.
+                        </p>
+                    <li><b>
+                        Protocolo independiente
+                    </li></b>
+                        <p>
+                            SOAP no está vinculado a
+                            ningún protocolo de transporte específico, lo que significa
+                            que puede utilizarse con una variedad de protocolos, como
+                            HTTP, SMTP y más
+                        </p>
+                    <li><b>
+                        Plataforma Independiente
+                    </li></b>
+                        <p>
+                            SOAP es independiente de la
+                            plataforma y el lenguaje de programación, lo que permite
+                            la interoperabilidad entre sistemas heterogéneos.  
+                        </p>
+                    <li><b>
+                        Lenguaje Neutro
+                    </li></b>
+                        <p>
+                            SOAP no favorece ningún lenguaje de
+                            programación en particular y se puede utilizar con
+                            cualquier lenguaje que admita la creación y el análisis de
+                            mensajes XML.
+                        </p>
+                    <li><b>
+                    Extensiones
+                    </li></b>
+                        <p>
+                            SOAP permite la inclusión de información
+                            adicional en los mensajes, lo que lo hace altamente
+                            extensible y adaptable a diferentes necesidades
+                        </p>
+                </ol>
+            | </p>
+            
+                <center><h1>
+                        Que es SOAP?             
+                 </h1>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/oA2CMpC06ws?si=svl9orwB2vzF7mgj" title="YouTube video player" 
+                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                 web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>       
+        
+                </center>
+                <a href="https://aulavirtual.uaa.mx/pluginfile.php/133180/mod_resource/content/1/SOAP_%20Definición%2C%20Características%2C%20Usabilidad%2C%20Funcionamiento%2C%20Beneficios%2C%20Ventajas%20y%20Desventajas.pdf">Referencia</a>
+
+          </div>
+            
+            </center>
+
+          </div>
+
+        </div>
+    </div>
+</body>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Forms</title>
+    <link rel="icon" type="image/png" href="img/maurice.jpeg">
+    <link rel="stylesheet" href="css/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ubicacion.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .row > div {
+        
+        background-color: rgb(214, 211, 129);
+        padding: 40px;
+        border-style: solid;
+        border-color: black;
+    }
+    body {
+        background-color: rgba(94, 121, 63, 0.829);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    nav {
+        background-image: url(img/maurice.jpeg); 
+    }
+    
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Desarrollo web</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tecnologias web APi's
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="HTTP.html">HTTP</a>
+                            <a class="dropdown-item" href="SOAP.html">SOAP</a>
+                            <a class="dropdown-item" href="REST.html">REST</a>
+                            <a class="dropdown-item" href="JWT.html">JWT</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Microservicios.html">Microservicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Desarrollo web API's
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="Recomendaciones.html">Recomendaciones</a>
+                            <a class="dropdown-item" href="Procesos.html">Procesos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contenedores.html">Contenedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nube.html">Desarrollo Para Nube</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Apps Web ASP.NET
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="WebForms.html">Web Forms</a>
+                            <a class="dropdown-item" href="WFC.html">WFC</a>
+                            <a class="dropdown-item" href="MVC.html">MVC</a>
+                            <a class="dropdown-item" href="Web API.html">Web API</a>
+                            <a class="dropdown-item" href="SignalR.html">Signal R</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ASP.Net Core
+                            </a>
+                            <a class="dropdown-item" href="Razor.html">Razor</a>
+                            <a class="dropdown-item" href="Blazor.html">Blazor</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+
+    <div class="container">
+        <div class="row">
+          
+          <div class="col-12">
+            <center><h1>Web Forms</h1></center>
+            <center><p>
+                Es uno de los cuatro modelos de programación que puede usar para crear aplicaciones web ASP.NET, 
+                los demás son ASP.NET MVC, ASP.NET Web Pages y ASP.NET Single Page Applications.
+            </p></center>
+            <center><p>
+                Los formularios Web Forms son páginas que los usuarios solicitan mediante su explorador. Estas páginas se pueden escribir con una combinación de HTML, 
+                script de cliente, controles de servidor y código de servidor. Cuando los usuarios solicitan una página, el marco se compila y ejecuta en el servidor y 
+                luego el marco genera el marcado HTML que el explorador puede representar. Una página de ASP.NET Web Forms presenta información al usuario en cualquier 
+                dispositivo cliente o explorador.
+            </p></center>
+            <center>
+                <img src="img\WebForms1.png" alt="forms" width="600" height="300">
+            </center>
+    
+            <center><h3><b>
+                Algunos Puntos de Web Forms:   
+            </h3></b></center>
+            <ul>
+                <li>
+                    Se basa en la tecnología de Microsoft ASP.NET, en la que el código que se ejecuta en el servidor 
+                    genera dinámicamente la salida de la página web en el explorador o el dispositivo cliente. 
+                </li>
+                <li>
+                    Es compatible con cualquier explorador o dispositivo móvil. Una página web de ASP.NET representa 
+                    automáticamente el código HTML compatible con el explorador correcto para características como estilos, diseño, etc.
+                </li>    
+                <li>
+                    Se admite con cualquier lenguaje compatible con Common Language Runtime de .NET, como Microsoft Visual Basic y Microsoft Visual C#.
+                </li>
+                <LI>
+                    Se basa en Microsoft .NET Framework. Esto proporciona todas las ventajas del marco, incluido un entorno administrado, seguridad de tipos y herencia.
+                </LI>
+                <li>
+                    Es flexible porque puede agregar en ellos controles creados por el usuario y de terceros.
+                </li>
+            </ul>
+ 
+            
+                <center><h1>
+                        Como funciona Web forms?             
+                 </h1>
+                 <iframe width="600" height="400" src="https://www.youtube.com/embed/2O8pkybH6po" title="Learn HTML forms in 8 minutes 📝" frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+                </center>
+
+                <a href="https://learn.microsoft.com/es-es/aspnet/web-forms/what-is-web-forms">Referencia</a>
+
+          </div>
+            
+            </center>
+
+          </div>
+
+        </div>
+    </div>
+    
+
+</body>

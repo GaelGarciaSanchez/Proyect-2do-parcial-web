@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT</title>
+    <link rel="icon" type="image/png" href="img/maurice.jpeg">
+    <link rel="stylesheet" href="css/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ubicacion.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .row > div {
+       
+        background-color: rgb(214, 211, 129);
+        padding: 40px;
+        border-style: solid;
+        border-color: black;
+    }
+    body {
+        background-color: rgba(94, 121, 63, 0.829);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    nav {
+        background-image: url(img/maurice.jpeg); 
+    }
+    
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Desarrollo web</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tecnologias web APi's
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="HTTP.html">HTTP</a>
+                            <a class="dropdown-item" href="SOAP.html">SOAP</a>
+                            <a class="dropdown-item" href="REST.html">REST</a>
+                            <a class="dropdown-item" href="JWT.html">JWT</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Microservicios.html">Microservicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Desarrollo web API's
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="Recomendaciones.html">Recomendaciones</a>
+                            <a class="dropdown-item" href="Procesos.html">Procesos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contenedores.html">Contenedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nube.html">Desarrollo Para Nube</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Apps Web ASP.NET
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="WebForms.html">Web Forms</a>
+                            <a class="dropdown-item" href="WFC.html">WFC</a>
+                            <a class="dropdown-item" href="MVC.html">MVC</a>
+                            <a class="dropdown-item" href="Web API.html">Web API</a>
+                            <a class="dropdown-item" href="SignalR.html">Signal R</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ASP.Net Core
+                            </a>
+                            <a class="dropdown-item" href="Razor.html">Razor</a>
+                            <a class="dropdown-item" href="Blazor.html">Blazor</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+          
+          <div class="col-12">
+            <center><h1>JWT</h1></center>
+            <center><p>
+                JWT (JSON Web Token) es un estándar qué está dentro del documento RFC 7519.
+                En el mismo se define un mecanismo para poder propagar entre dos partes, y 
+                de forma segura, la identidad de un determinado usuario, además con una serie de claims o privilegios.
+                Estos privilegios están codificados en objetos de tipo JSON, 
+                que se incrustan dentro de del payload o cuerpo de un mensaje que va firmado digitalmente.
+            </p></center>
+            <center>
+                <img src="img\JWT1.png" alt="jasonwebtoken" width="600">
+            </center>
+    
+            <center><h3><b>
+                Token JWT:   
+            </h3></b></center>
+            <p>
+                En la práctica, se trata de una cadena de texto que tiene tres partes codificadas en Base64, cada una de ellas separadas por un punto
+                Como hemos dicho, un token tres partes:
+             </p>
+            <ul>
+                <li><b>
+                    Header: 
+                </li></b>
+                    <p>
+                        encabezado dónde se indica, al menos, el algoritmo y el tipo de token, que en el caso del ejemplo anterior era el algoritmo HS256 y un token JWT.
+                    </p>
+                <li><b>
+                    payload: 
+                </li></b>
+                    <p>
+                        donde aparecen los datos de usuario y privilegios, así como toda la información que queramos añadir, todos los datos que creamos convenientes.   
+                    </p>
+                <li><b>
+                    signature:
+                </li></b>
+                <p>
+                    una firma que nos permite verificar si el token es válido, y aquí es donde radica el quid de la cuestión, 
+                    ya que si estamos tratando de hacer una comunicación segura entre partes y hemos visto que podemos coger cualquier token y 
+                    ver su contenido con una herramienta sencilla, ¿dónde reside entonces la potencia de todo esto? 
+                </p>
+            </ul>
+
+            <center><h3><b>
+                Token JWT Seguro:   
+            </h3></b></center>
+            <center>
+                <p>
+                    Aunque el algoritmo nos permita verificar la firma, y, por tanto, confiar o no, tanto el encabezado como el cuerpo si llevan muchos datos van en abierto, 
+                    ya que Base64 no es un cifrado, es simplemente una codificación que es muy fácilmente decodificable.
+
+                    JWT nos invita siempre a que la comunicación entre partes se realice con HTTPS para encriptar el tráfico, de forma que, 
+                    si alguien lo interceptara, el propio tráfico a través de HTTP sobre esos sockets SSL, cifrara toda la comunicación, la del token y todo lo demás, 
+                    y así añadir esa posibilidad de seguridad.
+                </p>
+            </center>
+            
+            
+                <center><h1>
+                        Como funciona JWT?             
+                 </h1>
+                 <iframe width="899" height="506" src="https://www.youtube.com/embed/qXJ9jV-0wQ4" title="QUÉ ES JSON WEB TOKEN Y CÓMO FUNCIONA" 
+                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+                </center>
+                <a href="https://openwebinars.net/blog/que-es-json-web-token-y-como-funciona/">Referencia</a>
+
+          </div>
+            
+            </center>
+
+          </div>
+
+        </div>
+    </div>
+</body>
